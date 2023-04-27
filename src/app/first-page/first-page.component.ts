@@ -19,11 +19,7 @@ export class FirstPageComponent implements OnInit,AfterViewInit {
   patient = {
     FirstName:'',
     LastName:'',
-    //AverageGlucoseLevel:null,
-    //Hypertension:null,
-    //Married:null,
-    //Smokes:null,
-    //Age:null
+   
 }
 patientsfromDB: Patients[] = [];  
 formVar=false;

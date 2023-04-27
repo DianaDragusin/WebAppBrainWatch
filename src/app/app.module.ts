@@ -28,6 +28,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { SecondPageComponent } from './second-page/second-page.component';
+import { NgxFileDropModule } from 'ngx-file-drop';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { SecondPageComponent } from './second-page/second-page.component';
     MatCardModule,
     MatPaginatorModule,
     MatMenuModule,
-    MatDividerModule
+    MatDividerModule,
+    NgxFileDropModule
 
   ],
   providers: [],

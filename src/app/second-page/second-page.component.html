@@ -1,1 +1,8 @@
-<p>second-page works!</p>
+<div class="carousel-container">
+    <div class="carousel-slide" *ngFor="let slide of slides; let i = index;" [class.active]="i === currentSlideIndex">
+      <img [src]="slide.imageUrl">
+    </div>
+    <a class="carousel-prev" (click)="prevSlide()">&#10094;</a>
+    <a class="carousel-next" (click)="nextSlide()">&#10095;</a>
+  </div>
+  
