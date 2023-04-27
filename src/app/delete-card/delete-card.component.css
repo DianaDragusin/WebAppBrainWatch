@@ -1,0 +1,7 @@
+.btnDelete {
+    color: red;
+  }
+
+.btnCancel:hover{
+    background-color:white;
+}

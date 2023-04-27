@@ -22,13 +22,18 @@ import { MatInputModule } from '@angular/material/input';
 
 import { MatIconModule } from '@angular/material/icon';
 import { EditPartComponent } from './edit-part/edit-part.component';
+import { DeleteCardComponent } from './delete-card/delete-card.component';
+import {MatCardModule} from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
     PopupComponent,
-    EditPartComponent
+    EditPartComponent,
+    DeleteCardComponent
   ],
   imports: [
     provideFirebaseApp(() => initializeApp(config.firebase)),
@@ -45,7 +50,9 @@ import { EditPartComponent } from './edit-part/edit-part.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatPaginatorModule
 
   ],
   providers: [],
