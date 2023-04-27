@@ -1,0 +1,49 @@
+header{
+    background-color: #3baea0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    
+    padding-right: 16px;
+    max-height: 40px;
+    fill: white;
+}
+
+nav > span{
+    font-weight: 400;
+    font-size: 24px;
+}
+footer{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: flex-end;
+    background-color:  #3baea0 ;
+    font-size: 14px;
+    
+}
+
+main {
+    min-height: 82vh;
+}
+
+.tableContainer
+{
+    margin: 3% auto;
+    width: 90%;
+    overflow-x:auto ;
+}
+.btnCentered
+{
+    margin: 1% auto;
+    display: flex;
+    justify-content: right;
+}
+
+
+

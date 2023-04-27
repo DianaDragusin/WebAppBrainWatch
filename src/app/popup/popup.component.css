@@ -1,0 +1,87 @@
+/* popup.component.css */
+
+header {
+    background-color: #3baea0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav img {
+    padding-right: 16px;
+    max-height: 40px;
+    fill: white;
+  }
+  
+  header nav span {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  footer {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: flex-end;
+    background-color: #3baea0;
+    font-size: 14px;
+  }
+  
+  main {
+    min-height: 82vh;
+  }
+  
+  form {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="checkbox"] {
+    /*padding: 0.5rem; */
+    border-radius: 0.25rem;
+    border: none;
+    margin-bottom: 0.12;
+    font-size: 1.2rem;
+    border: 1px solid black;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #3baea0;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #318c82;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .inputBox {
+    border: 1px solid black;
+  }  

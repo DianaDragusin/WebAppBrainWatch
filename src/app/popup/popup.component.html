@@ -1,0 +1,45 @@
+<!-- popup.component.html -->
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label for="first-name">First Name</mat-label>
+        <input matInput placeholder="First Name" type="text" id="First-name" formControlName="FirstName">
+       
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label for="last-name">Last Name</mat-label>
+        <input matInput placeholder="Last Name" type="text" id="Last-name" formControlName="LastName">
+       
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label for="email">Email</mat-label>
+        <input matInput placeholder="Email" type="text" id="Email" formControlName="Email">
+       
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label for="average-glucose-level">Average glucose level</mat-label>
+        <input matInput placeholder="Average glucose level" type="number" id="average-glucose-level" formControlName="AverageGlucoseLevel">
+        
+    </mat-form-field>
+   
+    <div>
+      <label for="hypertension">Hypertension:</label>
+      <input type="checkbox" id="Hypertension" formControlName="Hypertension">
+    </div>
+    <div>
+      <label for="married">Married:</label>
+      <input type="checkbox" id="Married" formControlName="Married">
+    </div>
+    <div>
+      <label for="smokes">Smokes:</label>
+      <input type="checkbox" id="Smokes" formControlName="Smokes">
+    </div>
+    <mat-form-field appearance="outline">
+        <mat-label for="age">Age</mat-label>
+        <input matInput placeholder="Age" type="number" id="age" formControlName="Age">
+      
+    </mat-form-field>
+   
+    <button type="submit" (click)="submit()">Submit</button>
+  </form>
+  
