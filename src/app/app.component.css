@@ -1,0 +1,38 @@
+.logoContainer
+{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: #3baea0;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+img{
+    
+    padding-right: 16px;
+    max-height: 40px;
+    fill: white;
+   
+}
+
+
+footer {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: flex-end;
+    background-color:  #3baea0 ;
+    font-size: 14px;
+    
+}
+
+main {
+    min-height: 82vh;
+}

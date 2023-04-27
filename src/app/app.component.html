@@ -1,1 +1,27 @@
-<app-first-page></app-first-page>
+<header>
+    <nav  routerLink="/">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item  routerLink="/first-page">Patients</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item routerLink="/second-page">Cases</button>
+    </mat-menu>
+    <div class="logoContainer">
+      <img src="/assets/icons/logo.png" alt="logo"  />
+      <span>BrAInwatch</span>
+    
+    </div>
+         
+       
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
+   
+
+<footer>  
+        <p>© BrAInwatch 2023</p>
+</footer>

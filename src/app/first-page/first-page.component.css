@@ -3,7 +3,7 @@ header{
 }
 nav{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
 }
 img{
@@ -11,13 +11,11 @@ img{
     padding-right: 16px;
     max-height: 40px;
     fill: white;
+   
 }
 
-nav > span{
-    font-weight: 400;
-    font-size: 24px;
-}
-footer{
+
+footer {
     height: 48px;
     display: flex;
     align-items: center;
@@ -52,5 +50,11 @@ main {
     color: red;
  }
 
-
+.logoContainer
+{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

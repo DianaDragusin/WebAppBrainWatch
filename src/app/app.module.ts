@@ -25,6 +25,9 @@ import { EditPartComponent } from './edit-part/edit-part.component';
 import { DeleteCardComponent } from './delete-card/delete-card.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { SecondPageComponent } from './second-page/second-page.component';
 
 
 @NgModule({
@@ -33,7 +36,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     FirstPageComponent,
     PopupComponent,
     EditPartComponent,
-    DeleteCardComponent
+    DeleteCardComponent,
+    SecondPageComponent
   ],
   imports: [
     provideFirebaseApp(() => initializeApp(config.firebase)),
@@ -52,7 +56,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatInputModule,
     MatIconModule,
     MatCardModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule,
+    MatDividerModule
 
   ],
   providers: [],
