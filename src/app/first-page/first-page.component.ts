@@ -3,6 +3,7 @@ import { PatientsService } from '../Services/patients.service';
 import { Patients } from '../Models/patients';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
+import { EditPartComponent } from '../edit-part/edit-part.component';
 
 @Component({
   selector: 'app-first-page',
@@ -57,6 +58,13 @@ export class FirstPageComponent implements OnInit {
   }
   deletePatient(patient:Patients) {
     this.patientsService.deletePatient(patient);
+      
+  }
+  editPatient(patient:Patients) {
+    const dialogRef = this.dialog.open(EditPartComponent, {
+      data: { patient }
+    });
+    
       
   }
  

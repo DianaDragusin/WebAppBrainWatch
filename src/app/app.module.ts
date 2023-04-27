@@ -21,12 +21,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 
 import { MatIconModule } from '@angular/material/icon';
+import { EditPartComponent } from './edit-part/edit-part.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
-    PopupComponent
+    PopupComponent,
+    EditPartComponent
   ],
   imports: [
     provideFirebaseApp(() => initializeApp(config.firebase)),

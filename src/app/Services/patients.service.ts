@@ -41,6 +41,27 @@ export class PatientsService {
     });
   }
 
+  async editPatient(patient:Patients) {
+    const myCollection = collection(this.fs, 'Patients');
+    const querySnapshot = await getDocs(myCollection);
+  
+    querySnapshot.forEach(async (doc) => {
+      const docData = doc.data();
+      if (
+        docData['FirstName'] === patient.FirstName &&
+        docData['LastName'] === patient.LastName &&
+        docData['Email'] === patient.Email &&
+        docData['Age'] === patient.Age &&
+        docData['Hypertension'] === patient.Hypertension &&
+        docData['Married'] === patient.Married &&
+        docData['Smokes'] === patient.Smokes
+      ) {
+        await deleteDoc(doc.ref);
+        console.log('Patient succesfully deleted!');
+      }
+    });
+  }
+
   
   
    /* 
