@@ -2,7 +2,7 @@
     
     position: relative;
     width: 85%;
-    height: 570px;
+    height: 390px;
     overflow: hidden;
     margin:3% auto;
    
@@ -43,4 +43,9 @@
   .carousel-next {
     right: 20px;
   }
-  
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4% ;
+  }
